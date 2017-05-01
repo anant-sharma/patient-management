@@ -25,6 +25,7 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(responseTime());
 app.use('/', express.static(__dirname + '/ui'));
+app.use('/bower_components', express.static(__dirname + '/ui/bower_components'));
 app.use(authVerify);
 
 // Routes
