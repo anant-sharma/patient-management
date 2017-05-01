@@ -124,7 +124,7 @@ app.service('utils', function(validationService) {
         var t = $(window).height();
         
         // Set height
-        $('.content-wrapper').height(t - 101);
+        $('.content-wrapper').css('min-height', `${t - 101}px`);
         $('.content-wrapper').css('margin-left', '0px');
         $('.main-footer').css('margin-left', '0px');
         
