@@ -1,0 +1,9 @@
+<div class="form-group">
+    <fc-label></fc-label>
+    <ui-select multiple ng-model="selected.value" theme="bootstrap" close-on-select="false" class="form-control">
+        <ui-select-match>{{$item}}</ui-select-match>
+        <ui-select-choices repeat="item in (list | filter: $select.search | orderBy) track by item">
+            <span ng-bind-html="item"></span>
+        </ui-select-choices>
+    </ui-select>
+</div>

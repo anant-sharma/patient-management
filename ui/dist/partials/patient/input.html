@@ -1,0 +1,101 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="pull-left">
+                    {{pageHeader}}
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    
+                    <!-- Box Header -->
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Patient Details</h3>
+                    </div>
+                    
+                    <!-- Box Body -->
+                    <div class="box-body">
+                        <form role="form">
+                            
+                            <div class="row">
+                                
+                                <!-- Left Section-->
+                                <div class="col-sm-6 col-xs-12">
+                                    
+                                    <fc-text label="'First Name'" model="o.firstname" mode="mode" required alphanumeric nomultispace></fc-text>
+                                    
+                                    <fc-text label="'Last Name'" model="o.lastname" mode="mode" required alphanumeric nomultispace></fc-text>
+                                    
+                                    <fc-text label="'Age'" model="o.age" mode="mode" required numeric></fc-text>
+                                    
+                                </div>
+                                
+                                <!-- Right Section -->
+                                <div class="col-sm-6 col-xs-12">
+                                    
+                                    <fc-select label="'Gender'" model="o.gender" required></fc-select>
+                                    
+                                    <fc-text label="'Phone'" model="o.phone" required numeric></fc-text>
+                                    
+                                    <fc-date-picker label="'DOB'" model="o.dob"></fc-date-picker>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row">
+                                
+                                <div class="col-xs-12">
+                                    
+                                    <fc-text-area label="'Information'" model="o.info" rows="'5'"></fc-text-area>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                </div><!-- /.box -->
+            </div>
+        </div>
+        
+        <fc-error-box></fc-error-box>
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    
+                    <!-- Save/ Cancel Bank details button -->
+                    <div class="box-footer">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                
+                                <button type="button" class="btn btn-primary pull-right" ng-click="patient.save()">Save</button>
+                                
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                
+                                <button type="button" class="btn btn-primary pull-left" ng-click="patient.cancel()">Cancel</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- /.content -->
+    
+</div>

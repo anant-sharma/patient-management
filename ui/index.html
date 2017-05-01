@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="mainController" ng-cloak>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PATIENT MANAGEMENT</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Angular Material -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <!-- Angular Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- AngularJS Toaster -->
+    <link rel="stylesheet" href="bower_components/AngularJS-Toaster/toaster.min.css">
+    <!-- Data Table -->
+    <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- Angular UI Select -->
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.min.css">
+    <link rel="stylesheet" href="tp/select2/select2.css">
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="tp/datepicker/datepicker3.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        
+        <!-- Top Navbar -->
+        <navbar-container ng-cloak></navbar-container>
+        
+        <!-- Content Wrapper. Contains page content -->
+        <ng-view ng-cloak></ng-view>
+        
+        <spinner-container></spinner-container>
+        
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs"></div>
+            <strong>Copyright &copy; 2017 <a target="_blank" href="https://www.linkedin.com/in/anantsharma1993/" >ANANT SHARMA</a>.</strong> All rights reserved.
+        </footer>
+        
+    </div>
+    <!-- ./wrapper -->
+    
+    <section>
+        <!-- Angular JS -->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <!-- Angular Route -->
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Angular Material -->
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <!-- Angular UI -->
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <!-- Angular Sanitize -->
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <!-- Angular UI Select -->
+        <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
+        <!-- Moment -->
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <!-- DataTables -->
+        <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <!-- AngularJS Toaster -->
+        <script src="bower_components/AngularJS-Toaster/toaster.min.js"></script>
+        <!-- Angular UI Select -->
+        <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
+        <!-- Datepicker -->
+        <script src="tp/datepicker/bootstrap-datepicker.js"></script>
+        <!-- AdminLTE App -->
+        <script src="dist/js/admin-app.js"></script>
+        <!-- Custom Scripts -->
+        <script src="dist/js/main/app.js"></script>
+        <!-- Services -->
+        <script src="dist/js/services/spinner-service.js"></script>
+        <script src="dist/js/services/auth-interceptor.js"></script>
+        <script src="dist/js/services/auth-service.js"></script>
+        <script src="dist/js/services/validation.js"></script>
+        <script src="dist/js/services/utils.js"></script>
+        <script src="dist/js/services/toaster-service.js"></script>
+        <!-- Config -->
+        <script src="dist/js/main/config.js"></script>
+        <!-- Main Controller -->
+        <script src="dist/js/main/main-controller.js"></script>
+        <!-- Components -->
+        <script src="dist/components/navbar/navbar.js"></script>
+        <script src="dist/components/spinner/spinner.js"></script>
+        <script src="dist/components/form-elements/label/label.js"></script>
+        <script src="dist/components/form-elements/text/text.js"></script>
+        <script src="dist/components/form-elements/textarea/textarea.js"></script>
+        <script src="dist/components/form-elements/select/select.js"></script>
+        <script src="dist/components/form-elements/datepicker/datepicker.js"></script>
+        <script src="dist/components/error-box/error-box.js"></script>
+        <!-- Patient Screen -->
+        <script src="dist/js/modules/patient/service.js"></script>
+        <script src="dist/js/modules/patient/controller.js"></script>
+        <!-- Login Screen -->
+        <script src="dist/js/modules/login/controller.js"></script>
+    </section>
+</body>
+
+</html>

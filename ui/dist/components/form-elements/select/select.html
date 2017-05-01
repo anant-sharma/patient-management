@@ -1,0 +1,12 @@
+<div class="form-group">
+    <fc-label></fc-label>
+    <ui-select ng-model="selected.value" theme="select2"
+    on-select="change()" class="form-control" ng-disabled="isDisabled">
+        <ui-select-match>
+            <span ng-bind="$select.selected"></span>
+        </ui-select-match>
+        <ui-select-choices repeat="item in (list | filter: $select.search | orderBy) track by item" position='down'>
+            <span ng-bind-html="item"></span>
+        </ui-select-choices>
+    </ui-select>
+</div>

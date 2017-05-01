@@ -1,0 +1,5 @@
+<label ng-hide="!label.length" ng-class="label==='.'?'transparent':''">
+    <i class="fa fa-times-circle-o" ng-show="state.status === 'fail'"></i>
+    {{label}}
+    <span style="required" ng-show="required">*</span>
+</label>
